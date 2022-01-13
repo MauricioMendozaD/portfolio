@@ -1,0 +1,17 @@
+<div>
+  <h3 class="title">Lista de favoritos</h3>
+</div>
+<div>
+  <ul class="favorite-list">
+    <li *ngFor="let favorito of listaFavoritos">
+      <div class="card">
+        <img class="mini-image" [src]="favorito?.data?.image" alt="">
+      </div>
+      <div>
+        <div class="title-inside">
+          {{ favorito?.data?.title }}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
